@@ -2,19 +2,21 @@
     margin: 0;
 }
 
+body, html {
+    height: 100%;
+}
+
 body {
-    background-color: pink;
     font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
 }
 
 img {
     height: auto;
-    width: 40%;
+    width: 45%;
 }
 
-.headerBox {
-    display: flex;
-    justify-content: space-between;
+p {
+    text-align: center;
 }
 
 ul {
@@ -23,8 +25,29 @@ ul {
     list-style: none;
 }
 
+.parallax {
+    background-image: url("../KatiesCookies/images/background.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .headerOne {
     display: flex;
     justify-content: flex-start;
 }
 
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.mainC {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 24px;
+}
