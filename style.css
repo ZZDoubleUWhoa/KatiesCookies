@@ -2,9 +2,12 @@
     margin: 0;
 }
 
+body, html {
+    height: 100%;
+}
 
 body {
-    background: linear-gradient(gray, lightgray, beige, white);
+    background: rgba(0,0,0,0.1);
     font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
 }
 
@@ -28,6 +31,7 @@ ul {
 h2 {
     text-align: center;
     padding: 14px;
+    margin: 0;
 }
 
 .parallax {
@@ -66,6 +70,24 @@ h2 {
     background-size: cover;
 }
 
+.parallaxFour {
+    background-image: url("../KatiesCookies/images/pink.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxFive {
+    background-image: url("../KatiesCookies/images/pexels-tyler-lastovich-937782.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .headerOne {
     display: flex;
 }
@@ -88,6 +110,13 @@ h2 {
     flex-direction: column;
 }
 
+.imagebox {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    gap: 14px;
+}
+
 @media only screen and (max-device-width: 1366px) {
     .parallax {
       background-attachment: scroll;
@@ -99,6 +128,9 @@ h2 {
         background-attachment: scroll;
     }
     .parallaxThree {
+        background-attachment: scroll;
+    }
+    .parallaxFour {
         background-attachment: scroll;
     }
   }
