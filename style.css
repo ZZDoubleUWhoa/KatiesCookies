@@ -28,10 +28,30 @@ ul {
     list-style: none;
 }
 
+ol {
+    display: flex;
+    flex-direction: column;
+    list-style-type: square;
+    padding: 24px;
+    gap: 10px;
+}
+
 h2 {
     text-align: center;
     padding: 14px;
     margin: 0;
+}
+
+.btn {
+    background-color: transparent;
+    color: coral;
+    border: none;
+}
+
+.btn:hover {
+    background: none;
+    border: none;
+    color: blue;
 }
 
 .parallax {
@@ -90,22 +110,16 @@ h2 {
 
 .boxFour {
     display: flex;
-    margin: 0;
+    justify-content: space-between;
 }
 
 .aboutUs {
     display: flex;
     background-color: rgba(0,0,0,0.1);
     text-align: left;
-    padding-right: 250px;
+    width: 460px;
 }
 
-.ingredients {
-    display: flex;
-    background-color: rgba(0,0,0,0.1);
-    text-align: right;
-    padding-left: 250px;
-}
 
 .headerOne {
     display: flex;
